@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import pdfplumber; pdf = pdfplumber.open\\('Контрольная работа №3. Технологии разработки серверных приложений.pdf'\\); [print\\(p.extract_text\\(\\)\\) for p in pdf.pages]\")",
+      "Bash(python3 -c \"import PyPDF2; reader = PyPDF2.PdfReader\\('Контрольная работа №3. Технологии разработки серверных приложений.pdf'\\); [print\\(page.extract_text\\(\\)\\) for page in reader.pages]\")",
+      "Bash(pip install:*)",
+      "Bash(python3 -c 'import sys; sys.path.insert\\(0, '\\\\''__TRACKED_VAR__'\\\\''\\); import ast; ast.parse\\(open\\('\\\\''__TRACKED_VAR__/main.py'\\\\''\\).read\\(\\)\\); print\\('\\\\''OK: __TRACKED_VAR__/main.py'\\\\''\\)')",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}
